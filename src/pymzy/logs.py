@@ -4,7 +4,10 @@ import logging, argparse
 def init_argparse(parser):
     group = parser.add_argument_group(
         'logging',
-        'Default verbosity is WARNING. To increase/decrease verbosity provide multiple -v/-q flags respectively.')
+        """Default verbosity is WARNING.
+        To increase/decrease verbosity provide multiple -v/-q flags respectively.
+        (Up to 2 times)
+        """)
     group.add_argument(
         '--logfile',
         help='File for writing logs',
